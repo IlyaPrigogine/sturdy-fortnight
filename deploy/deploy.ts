@@ -22,13 +22,11 @@ const func: DeployFunction = async function ({deployments, getNamedAccounts, net
 
     console.log(`tokenAddress: ${tokenAddress}`);
 
-    // const tokenAddress =
-    //
-    // await deploy('MyDefiProject', {
-    //     from: owner,
-    //     args: [tokenAddress],
-    //     log: true,
-    // });
+    await deploy('MyDefiProject', {
+        from: owner,
+        args: [tokenAddress],
+        log: true,
+    });
 
 };
 export default func;
